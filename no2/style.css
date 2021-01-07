@@ -1,0 +1,24 @@
+table {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.kotak {
+  width: 167px;
+  height: 136px;
+  background-color: gray;
+}
+
+.satu {
+  background-color: black;
+  color: red;
+}
+
+.dua {
+  background-color: blue;
+  color: yellow;
+}
+.tiga {
+  color: green;
+}

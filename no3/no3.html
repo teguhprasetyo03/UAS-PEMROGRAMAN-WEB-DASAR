@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>No 3</title>
+  </head>
+  <body>
+    <h1>Program Swalayan</h1>
+    <table border="1" cellspacing="2" cellpadding="5">
+      <tr>
+        <td>Shampo :</td>
+        <td>
+          <input type="text" id="shampo" />
+        </td>
+        <td>Rp.30.000/Botol</td>
+      </tr>
+      <tr>
+        <td>Jumlah Beli Shampo :</td>
+        <td>
+          <input type="text" id="jmlbeli" />
+        </td>
+        <td>Qty</td>
+      </tr>
+      <tr>
+        <td>Sabun :</td>
+        <td>
+          <input type="text" id="sabun" />
+        </td>
+        <td>Rp.45.000/Botol</td>
+      </tr>
+      <tr>
+        <td>Jumlah Beli Sabun :</td>
+        <td>
+          <input type="text" id="jmlbeli" />
+        </td>
+        <td>Qty</td>
+      </tr>
+      <tr>
+        <td>Bedak :</td>
+        <td>
+          <input type="text" id="bedak" />
+        </td>
+        <td>Rp.50.000/Botol</td>
+      </tr>
+      <tr>
+        <td>Jumlah Beli Bedak :</td>
+        <td>
+          <input type="text" id="jmlbeli" />
+        </td>
+        <td>Qty</td>
+      </tr>
+      <tr>
+        <td>Total Yang Harus Dibayar</td>
+        <td colspan="2" id="total"></td>
+      </tr>
+    </table>
+    <button onclick="hasil()">hitung</button>
+    <button onclick="hapus()" value="clear">hapus</button>
+    <script>
+      function hasil() {
+        let shampo = parseInt(document.getElementById("shampo").value);
+        let sabun = parseInt(document.getElementById("sabun").value);
+        let bedak = parseInt(document.getElementById("bedak").value);
+        let jmlbeli = parseInt(document.getElementById("jmlbeli").value);
+
+        total = shampo * jmlbeli + sabun * jmlbeli + bedak * jmlbeli;
+        document.getElementById("total").innerHTML = total;
+        if (total > 1000000) {
+          alert("Selamat Anda Mendapatkan Handphone");
+        } else if (total >= 500000) {
+          alert("Selamat Anda Mendapatkan Dompet");
+        } else if (total >= 100000) {
+          alert("Selamat Anda Mendapatkan Payung");
+        } else {
+          alert("Anda Tidak Mendapatkan Apa-Apa");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>No 1 UAS</title>
+</head>
+<style>
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: blue;
+    margin-top: -120px;
+  } 
+  .img-1 {
+    width: 200px;
+    margin-right: 600px;
+  }
+  .img-2 {
+    width: 200px;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: red;
+  }
+
+  hr {
+    border-width: 0;
+    border-radius: 2px;
+    height: 1px;
+    background-color: black;
+  }
+
+  table {
+    width: 250px;
+  }
+
+  h2 {
+    color: blue;
+  }
+  .propinsi{
+    background-color: slateblue;
+  }
+  .medali{
+    background-color: slateblue;
+  }
+  
+.jumlah-medali{
+  text-align: center;
+   width: 30%;
+
+}
+</style>
+
+<body>
+  <center>
+    <img class="img-1"
+      src="http://3.bp.blogspot.com/-9wS-uhRioHo/VJ0fJpOwCEI/AAAAAAAAAqs/jqzJqgnIh6M/s1600/Logo%2BUnindra%2BUniversitas%2BIndraprasta%2BPGRI.png"
+      alt="img" />
+    <img class="img-2"
+      src="http://3.bp.blogspot.com/-9wS-uhRioHo/VJ0fJpOwCEI/AAAAAAAAAqs/jqzJqgnIh6M/s1600/Logo%2BUnindra%2BUniversitas%2BIndraprasta%2BPGRI.png"
+      alt="img" />
+    <br />
+    <h1>UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</h1>
+    <h3><i> Jl.Nangka No.58 Tanjung Barat-JakSel </i></h3>
+  </center>
+
+  <!-- garis bawah logo -->
+  <br /><br /><br />
+  <hr />
+
+  <!-- Membuat tabel nama dan kelas -->
+  <center>
+    <table border="1">
+      <tr>
+        <td>NAMA</td>
+        <td>...........</td>
+      </tr>
+      <tr>
+        <td>KELAS</td>
+        <td>...........</td>
+      </tr>
+    </table>
+  </center>
+
+  <center>
+    <h2>LAPORAN MEDALI PON</h2>
+    <h2>TAHUN 2020</h2>
+  </center>
+
+  <!-- input medali -->
+  <center>
+    <table border="0">
+      <tr>
+        <td>Kode Daerah :</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Nama Daerah :</td>
+        <td> <select name="Nama Daerah">
+            <option value="dki">Dki Jakarta</option>
+            <option value="bandung">Bandung</option>
+            <option value="bekasi">Bekasi</option>
+            <option value="depok">Depok</option>
+      </tr>
+      <tr>
+        <td>Jumlah Emas :</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Jumlah Perak :</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Jumlah Perunggu :</td>
+        <td><input type="text" /></td>
+      </tr>
+      <tr>
+        <td>Keterangan :</td>
+        <td>
+          <textarea rows="4" cols="15"></textarea>
+        </td>
+      </tr>
+    </table>
+    <input type="button" value="Submit">
+  </center>
+  <!-- jumlah perolehan medali -->
+  <center>
+    <table border="1px" class="jumlah-medali" >
+      <!-- <tr>
+       <td></td>
+      </tr> -->
+      <tr>
+        <th class="propinsi" rowspan="2" >PROPINSI</th>
+        <th class="medali" colspan="3" >MEDALI</th>
+      </tr>
+      <tr>
+        <th>EMAS</th>
+        <th>PERAK</th>
+        <th>PERUNGGU</th>
+      </tr>
+      <tr>
+        <th>DKI JAKARTA</th>
+        <td>14</td>
+        <td>22</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th>JAWA TENGAH</th>
+        <td>5</td>
+        <td>5</td>
+        <td>4</td>        
+      </tr>
+       <tr>
+        <th>JAWA BARAT</th>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>        
+      </tr>
+       <tr>
+        <th>JAWA TIMUR</th>
+        <td>3</td>
+        <td>6</td>
+        <td>5</td>        
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
